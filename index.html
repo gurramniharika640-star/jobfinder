@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Listing Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>💼 JobFinder</h1>
+  <p>Find your dream job</p>
+</header>
+
+<section class="search-box">
+  <input type="text" id="searchInput" placeholder="Search job title...">
+
+  <select id="locationFilter">
+    <option value="">All Locations</option>
+    <option value="Bangalore">Bangalore</option>
+    <option value="Hyderabad">Hyderabad</option>
+    <option value="Chennai">Chennai</option>
+    <option value="Pune">Pune</option>
+  </select>
+
+  <select id="categoryFilter">
+    <option value="">All Categories</option>
+    <option value="Web Development">Web Development</option>
+    <option value="Software Development">Software Development</option>
+    <option value="Data Science">Data Science</option>
+    <option value="UI/UX">UI/UX</option>
+  </select>
+
+  <select id="experienceFilter">
+    <option value="">All Experience</option>
+    <option value="Fresher">Fresher</option>
+    <option value="1-2 Years">1-2 Years</option>
+    <option value="2-4 Years">2-4 Years</option>
+  </select>
+</section>
+
+<main>
+  <h2>Available Jobs</h2>
+  <div id="jobContainer" class="job-container"></div>
+</main>
+
+<!-- Job Details -->
+<div id="jobModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div id="jobDetails"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
